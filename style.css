@@ -1,0 +1,508 @@
+/*=============== PAGES ================*/
+
+body{
+    background-color   : #e6cda6;
+    padding            : 0;
+    margin             : 0;
+    font-family        : Tahoma;
+    font-size          : 18px;
+    background-image   : url("images/snowy_background.jpg");
+    background-repeat  : no-repeat;
+    background-size    : 3040px 4056px;                          /* specify img size */ 
+    }
+
+/*=============== TOP MENU BAR (MENU_TOP) ================*/
+
+#menu_top a.home_logo{
+    background-image      : url("images/logo_new.png");
+    background-size       : 90%;
+    z-index               : 600;
+    background-repeat     : no-repeat;
+    background-position   : 12%;
+}
+
+#menu_top {                                     /* the actual menu bar */ 
+    position        : fixed;
+    padding-bottom  : 20px;
+    padding-left    : 15px;
+    padding-top     : 20px;
+    top             : 0px;
+    left            : 0;
+    z-index         : 500;
+    width           : 100%;
+    height          : 40px;
+    background-color: #004E57; 
+}
+
+#menu_top a{                                    /* hyperlinks within the menubar */ 
+    float           : left;
+    display         : block;
+    width           : 20%;                      /* 5 hyperlinks so 100/5 = 20% space for each hyperlink in menubar */ 
+    height          : 35px;                     
+    font-weight     : 700;
+    color           : white;
+    text-align      : center;                   /* centre-align hyperlink within its desginated 20% space */
+    text-decoration : none;
+    padding-top     : 15px;  
+}
+
+#menu_top a:hover{	
+    text-decoration: underline;	
+    color: #C5A573;
+}
+
+#content {
+    margin-block-start: 90px;
+    margin-block-end  : 60px;
+}
+
+/*=============== BOTTOM MENU BAR (MENU_BOTTOM) ================*/
+
+#menu_bottom{                                   /* # cos its a div ID */
+    position        : fixed;                    /* the bottom menu bar remains fixed despite scrolling up */
+    bottom          : 0;
+    left            : 0;
+    z-index         : 500;                      /* stack level of several layers (higher val is top layer) i.e. menu bar is on top? */
+    width           : 100%;                     /* width of menu bar */
+    height          : 40px;                     /* height of menu bar */
+    background-color: #004E57;                /* colour of menu bar */
+}
+
+#menu_bottom a{                                 /* hyperlinks in bottom menu bar */
+   float           : left;                      /* hyperlinks float to left in their specified space */
+   display         : block;                     /* enables us to adjust height & width of object i.e. dimensions */
+   width           : 100%;                      /* bottom menu has 2 hyperlinks so divide the space in 2 i.e.50% */
+   height          : 35px;                      /* specify height of hyperlink? */
+   font-weight     : 700;                           
+   color           : white;                   /* specify hyperlink colour */ 
+   text-align      : center;                    /* centre-align hyperlinks in menubar */ 
+   text-decoration : none;                      /* no underlined hyperlinks */
+   padding-top     : 12px;                      /* space above hyperlink text within the menu bar*/ 
+}
+
+#menu_bottom a:hover{	
+    text-decoration: underline;	
+    color: #C5A573;
+}
+
+/*=============== INDIVIDUAL MOVIES PAGE (INDIV_MOVIES) ================*/
+
+#about{                                           /* refers to HYPERLINKS with div class "movies */
+    background      : rgba(255 ,255, 255, .8);   /* text-box */ 
+    border          : 2px solid #C5A573;
+    float           : left;
+    width           : 80%;                         /* image width = 600px*/
+    height          : 95%;                       /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 100px;                        /* the margin above the hyperlink within the textbox */
+    margin-left     : 10%;
+    margin-right    : 10%;
+    padding         : 1px; 
+    text-decoration : none;
+    color           :#C5A573;
+    margin-bottom   : 6%;
+}
+
+#about img{
+    display: block;
+    margin-left: 50px;
+}
+
+#about p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#about_us h1{
+    text-align: center;
+}
+
+/*=============== MAP ================*/
+
+#map img {                                      /* img with div id "map */
+    display         : block;    	            /* allows us to specify dimens */ 
+    margin          : auto;                     /* automatic margin */ 
+    height          : 70%;                       
+    background-color: white;                  /* background colour behind map png img is white */
+    padding-top     : 15px;
+    padding-bottom  : 15px;
+}
+
+#map {                                 /* div id from map.html for map img */
+    margin-top   : 80px;               /* height of top menu bar (40px) + logo_crop height (40px) */
+    margin-bottom: 35px;               /* height of bottom menu bar = 35px */
+}
+
+/*=============== SHOPS CATEGORIES (BOOK_CATS) ================*/
+
+#book_cats{                                        /* refers to HYPERLINKS with div class "categories" */
+    float           : left;
+    background      : rgba(255 ,255, 255, .8);                      /* text-box */ 
+    border          : 2px solid #C5A573;
+    width           : 280px;                        /* image width = 600px*/
+    height          : 300px;                        /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 12px;                         /* the margin above the hyperlink within the textbox */
+    margin-left     : 15%;
+    margin-top      : 80px;
+    padding         : 1px; 
+    color           : #C5A573;                    /* colour of the hyperlink text */ 
+    text-align      : left;
+    padding-left    : 20px; 
+}
+
+#book_cats h4{
+    text-align: center;
+}
+
+#book_cats a{
+    text-decoration: none;
+    color          : #C5A573;
+    font-weight    : bolder;
+}
+
+/*=============== SHOPS CATEGORIES (CLOTHES_CATS) ================*/
+
+#clothes_cats{                                      /* refers to HYPERLINKS with div class "categories" */
+    float           : left;
+    background      : rgba(255 ,255, 255, .8);    /* text-box */ 
+    border          : 2px solid #C5A573;
+    width           : 290px;                        /* image width = 600px*/
+    height          : 300px;                        /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 12px;                         /* the margin above the hyperlink within the textbox */
+    margin-left     : 20%;
+    margin-top      : 80px;
+    padding         : 1px; 
+    color           : #C5A573;                    /* colour of the hyperlink text */ 
+    text-align      : left;
+    padding-left    : 20px; 
+}
+
+#clothes_cats h4{
+    text-align: center;
+}
+
+#clothes_cats a{
+    text-decoration: none;
+    color          : #C5A573;
+    font-weight    : bolder;
+}
+
+/*=============== SHOPS CATEGORIES (FOOD_CATS) ================*/
+
+#food_cats{                                        /* refers to HYPERLINKS with div class "categories" */
+    float           : left;
+    background      : rgba(255 ,255, 255, .8);                      /* text-box */ 
+    border          : 2px solid #C5A573;
+    width           : 280px;                        /* image width = 600px*/
+    height          : 300px;                        /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 12px;                         /* the margin above the hyperlink within the textbox */
+    margin-left     : 15%;
+    margin-top      : 80px;
+    padding         : 1px; 
+    color           : #C5A573;                    /* colour of the hyperlink text */ 
+    text-align      : left;
+    padding-left    : 20px; 
+    margin-bottom   : 100px;
+}
+
+#food h4{
+    text-align: center;
+}
+
+#food_cats a{
+    text-decoration: none;
+    color          : #C5A573;
+    font-weight    : bolder;
+}
+
+.cats img{
+    border-color: #C5A573;
+}
+
+/*=============== SHOPS CATEGORIES (SUPERMARKETS_CATS) ================*/
+
+#supermarket_cats{                                 /* refers to HYPERLINKS with div class "categories" */
+    background      : rgba(255 ,255, 255, .8);   /* text-box */ 
+    border          : 2px solid #C5A573;
+    float           : left;
+    width           : 280px;                       /* image width = 600px*/
+    height          : 300px;                       /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 80px;                        /* the margin above the hyperlink within the textbox */
+    margin-left     : 20%;
+    padding         : 1px; 
+    color           : #C5A573;                   /* colour of the hyperlink text */ 
+    text-align      : left;
+    padding-left    : 30px; 
+}
+
+#supermarket h4{
+    text-align: center;
+}
+
+#supermarket_cats a{
+    text-decoration: none;
+    color          : #C5A573;
+    font-weight    : bolder;
+}
+
+.cats img{
+    border-color: #C5A573;
+}
+
+/*=============== SHOPS (INDIV_SHOPS) ================*/
+
+#indiv_shops{
+    background : rgba(255 ,255, 255, .8);        /* text-box */ 
+    border     : 2px solid #C5A573;
+    width      : 90%;
+    height     : 90%;
+    margin     : auto;
+    align-items: center;
+    display    : block;
+    text-align : left;
+    color      : black;
+    padding    : 20px;
+}
+
+#indiv_shops img{
+    padding-left: 25px;
+}
+
+#indiv_shops img.shop_head{
+    padding-left: 35%;
+}
+
+/*=============== MOVIES PAGE (MOVIES) ================*/
+
+a.movies{                                           /* refers to HYPERLINKS with div class "movies */
+    background      : rgba(255 ,255, 255, .8);   /* text-box */ 
+    border          : 2px solid #C5A573;
+    float           : left;
+    width           : 80%;                         /* image width = 600px*/
+    height          : 325px;                       /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 40px;                        /* the margin above the hyperlink within the textbox */
+    margin-left     : 10%;
+    margin-right    : 10%;
+    padding         : 1px; 
+    text-decoration : none;
+    color           :#C5A573;
+}
+
+.movies img{                                      /* images inside the div with class "info-box" i.e. animal thumbnails in textbox */ 
+    float  : left;                                /* float to the right of white text-box */
+    padding-left: 40px;
+    padding-top: 22px;
+    padding-right: 50px;
+}
+
+.movies h2{
+    color: #C5A573;
+    padding-top: 20px;
+}
+
+a.movies_last{                                     /* refers to HYPERLINKS with div class "movies */
+    background      : rgba(255 ,255, 255, .8);   /* text-box */ 
+    border          : 2px solid #C5A573;
+    float           : left;
+    width           : 80%;                         /* image width = 600px*/
+    height          : 325px;                       /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 40px;                        /* the margin above the hyperlink within the textbox */
+    margin-left     : 10%;
+    margin-right    : 10%;
+    padding         : 1px; 
+    text-decoration : none;
+    color           :#C5A573;
+    margin-bottom   : 6%;
+}
+
+.movies_last img{                                   /* images inside the div with class "info-box" i.e. animal thumbnails in textbox */ 
+    float        : left;                            /* float to the right of white text-box */
+    padding-left : 40px;
+    padding-top  : 22px;
+    padding-right: 50px;
+}
+
+.movies_last h2{
+    color      : #C5A573;
+    padding-top: 20px;
+}
+
+/*=============== INDIVIDUALS MOVIES PAGE (INDIV_MOVIES) ================*/
+
+#movie_box{                                        /* refers to HYPERLINKS with div class "movies */
+    background      : rgba(255 ,255, 255, .8);   /* text-box */ 
+    border          : 2px solid #C5A573;
+    float           : left;
+    width           : 80%;                         /* image width = 600px*/
+    height          : 790px;                       /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 40px;                        /* the margin above the hyperlink within the textbox */
+    margin-left     : 10%;
+    margin-right    : 10%;
+    padding         : 1px; 
+    text-decoration : none;
+    color           :#C5A573;
+    margin-bottom   : 6%;
+}
+
+#movie_box img{                                      /* images inside the div with class "info-box" i.e. animal thumbnails in textbox */ 
+    float  : left;                                /* float to the right of white text-box */
+    padding-left: 40px;
+    padding-top: 35px;
+    padding-right: 50px;
+}
+
+#movie_box p{
+    padding-right: 5px;
+}
+
+#movie_box h1{
+    color: #C5A573;
+    padding-top: 20px;
+}
+
+table{
+    font-family: Tahoma;
+    border-color: #C5A573;
+    border-width: 1.5px;
+    border-style: solid ;
+    border-collapse: collapse;
+    padding: 1px;  
+    font-weight: 200;
+    background-color: white;
+}
+
+thead{
+    background-color: #C5A573;
+    color: white;    
+}
+
+th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=============== CONTACT PAGE (CONTACT_FORM) ================*/       
+
+input{
+    width      : 90%;
+    height     : 25px;
+    margin     : 12px 0;             
+    border     : 1px solid #C5A573;
+    margin-left: 40px;    
+}
+
+textarea{
+    width      : 90%;
+    height     : 65px;
+    margin     : 12px 0;
+    border     : 1px solid #C5A573;
+    margin-left: 40px;
+}
+
+.button{
+    display         : block;
+    width           : 25%;
+    background-color: #C5A573;
+    text-decoration : none;
+    text-align      : center;
+    color           : white;
+    font-size       : 16px;
+    font-weight     : 600;
+    margin          : 12px 0;
+    padding         : 8px 0;
+    margin-left     : 39%;
+}
+
+/*=============== HOME PAGE (SALES) ================*/       
+
+#home_heading{
+    color:#C5A573;
+    background-color: rgba(255 ,255, 255, .8); 
+    border          : 2px solid #C5A573;
+    width: 50%;
+    margin: auto;
+}
+
+a.sales_box{                                        /* refers to HYPERLINKS with div class "movies */
+    float           : left;
+    background      : rgba(255 ,255, 255, .8);                      /* text-box */ 
+    border          : 2px solid #C5A573;
+    width           : 400px;                        /* image width = 600px*/
+    height          : 330px;                        /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 12px;                         /* the margin above the hyperlink within the textbox */
+    margin-left     : 13%;
+    margin-top      : 80px;
+    padding         : 1px; 
+    color           : #C5A573;                    /* colour of the hyperlink text */ 
+    text-align      : left;
+    padding-left    : 20px; 
+    text-decoration: none;
+}
+
+.sales_box h3{
+    text-align: center;
+}
+
+.sales_box img {
+    padding-left: 8px;
+}
+
+#mnb{
+    padding-bottom: 40px;
+}
+
+a.sales_box_last{                                        /* refers to HYPERLINKS with div class "movies */
+    float           : left;
+    background      : rgba(255 ,255, 255, .8);                      /* text-box */ 
+    border          : 2px solid #C5A573;
+    width           : 400px;                        /* image width = 600px*/
+    height          : 330px;                        /* textbox height = almost same as img height (400px) */ 
+    display         : block;
+    margin          : auto;
+    margin-top      : 12px;                         /* the margin above the hyperlink within the textbox */
+    margin-left     : 13%;
+    margin-top      : 80px;
+    padding         : 1px; 
+    color           : #C5A573;                    /* colour of the hyperlink text */ 
+    text-align      : left;
+    padding-left    : 20px; 
+    text-decoration : none;
+    margin-bottom   : 8%;
+}
+
+.sales_box_last h3{
+    text-align: center;
+}
+
+.sales_box_last img {
+    padding-left: 8px;
+}
+
